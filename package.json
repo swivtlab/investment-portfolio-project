@@ -1,0 +1,12 @@
+{
+  "name": "insurance",
+  "version": "0.1.0",
+  "description": "Insurance Builder",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  },
+  "scripts": {
+    "start": "concurrently \"cd server && npm run server \" \"cd frontend && npm start\" ",
+    "install": "concurrently \"cd frontend && npm install\" \"cd server && npm install \"  "
+  }
+}

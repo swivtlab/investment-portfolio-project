@@ -1,0 +1,37 @@
+{
+  "name": "proxy-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "proxy server",
+  "main": "index.js",
+  "scripts": {
+    "server": "node-env-run index.js --exec nodemon | pino-colada",
+    "dev": "run-p server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-pino-logger": "^5.0.0",
+    "node-env-run": "^4.0.2",
+    "nodemon": "^2.0.6",
+    "npm-run-all": "^4.1.5",
+    "pino-colada": "^2.1.0"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "http-proxy-middleware": "^2.0.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.3",
+    "utf-8-validate": "^5.0.4"
+  }
+}
