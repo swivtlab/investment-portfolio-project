@@ -15,13 +15,17 @@ This is the test project for displaying the Investment Portfolio of the clients 
 git clone https://github.com/swivtlab/investment-portfolio-project.git
 cd investment-portfolio-project
 ```
-
-Install dependencies on all projects:
+2. Copy .env.devlopment .env file in server directory
+  ```sh
+  cd server
+  mv .env.devlopment .env
+  ```
+3. Install dependencies on all projects:
 ```sh
 npm install
 ```
 
-Spin all server:
+4. Spin all server:
 ```sh
 npm start
 ```
